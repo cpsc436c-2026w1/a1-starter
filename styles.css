@@ -1,0 +1,38 @@
+/* css styles */
+
+/* Red right border for content reused from previous year's lecture notebooks */
+.from-prev-notebook {
+  border-right: 4px solid #d9534f;
+  padding-right: 1em;
+  margin-right: 0.5em;
+}
+
+/* --- syllabus preview: calendar readability --- */
+table { font-size: 0.9rem; }
+table td:first-child, table th:first-child { text-align: center; white-space: nowrap; }
+thead th { background: #f5f7f9; font-size: 0.8rem; text-transform: uppercase; letter-spacing: .04em; }
+.secured { background: #fdf6ec; }          /* rows that are closed-book, secured sittings */
+.dim { color: #2c6e78; font-weight: 600; } /* the five dimensions */
+
+/* --- semantic coding: the two tracks are visible, not just labelled --- */
+:root{
+  --dim-teal:#2c6e78;      /* the five dimensions */
+  --secured:#8a5424;       /* closed-book, secured sittings */
+  --secured-bg:#fdf6ec;
+  --practice-bg:#f5f8f9;
+}
+.wk, .num { font-family: var(--bs-font-monospace); font-variant-numeric: tabular-nums; }
+.wk { text-align:center; color:#6c757d; white-space:nowrap; }
+.dim { color: var(--dim-teal); font-weight:600; }
+tr.secured-row td { background: var(--secured-bg); }
+tr.secured-row .wk { color: var(--secured); font-weight:700; }
+.chip{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; padding:.1rem .4rem; border-radius:3px; white-space:nowrap;
+}
+.chip.secured{ background:var(--secured); color:#fff; }
+.chip.open{ background:#e9ecef; color:#495057; }
+.cal { width:100%; font-size:.88rem; }
+.cal th{ background:#f5f7f9; font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; color:#5c6b7a; }
+.cal td, .cal th{ padding:.5rem .65rem; vertical-align:top; border-bottom:1px solid #edf1f4; }
+.scroll{ overflow-x:auto; }

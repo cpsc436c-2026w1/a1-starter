@@ -1,0 +1,16 @@
+project:
+  output-dir: docs
+
+format:
+  html:
+    output-file: index.html
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+  gfm:
+    output-file: a1.md
+
+execute:
+  enabled: false
